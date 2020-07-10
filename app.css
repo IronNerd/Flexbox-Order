@@ -1,0 +1,78 @@
+html {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  font-size: 2vw;
+  font-weight: 700;
+  font-variant: small-caps;
+  text-decoration: none;
+  text-align: center;
+  height: 8vw;
+  border: 4px solid;
+  margin: 2px;
+  padding-top: 4.4vw;
+  order: 5;
+}
+
+.hether {
+  width: 100%;
+  order: 1;
+  border-color: orangered;
+  background-color: pink;
+  color: orangered;
+}
+
+.left {
+  flex-grow: 2;
+  order: 2;
+  border-color: steelblue;
+  background-color: lightsteelblue;
+}
+
+.main {
+  flex-grow: 6;
+  border-color: rebeccapurple;
+  background-color: hsl(270, 50%, 80%);
+  color: rebeccapurple;
+}
+
+.right {
+  flex-grow: 2;
+  border-color: hsl(160, 100%, 30%);
+  background-color: hsl(160, 100%, 75%);
+  color: green;
+}
+
+.footer {
+  width: 100%;
+  border-color: orangered;
+  background-color: pink;
+  color: orangered;
+}
+
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 414px) {
+  a {
+    font-size: 3vw;
+  }
+
+  div {
+    width: 97%;
+    flex-direction: column;
+  }
+
+  .left {
+    order: 5;
+  }
+
+  .main {
+    order: 2;
+  }
+}
